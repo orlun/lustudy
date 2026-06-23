@@ -1512,7 +1512,9 @@ function buildTodoRow(t,isDone){
     if(!t.done){
       t.done=true;t.doneAt=Date.now();
       row.classList.add('todo-finishing');
-      row.addEventListener('animationend',()=>{save();renderTodos();});
+      let _fired=false;const _done=()=>{if(_fired)return;_fired=true;save();renderTodos();};
+      row.addEventListener('animationend',_done);
+      setTimeout(_done,400);
     }else{
       t.done=false;delete t.doneAt;save();renderTodos();
     }
