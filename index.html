@@ -1103,6 +1103,12 @@ const EN={
   'Cian terminal':'Terminal cyan','Acento cian de terminal retro. (~13 h)':'Retro terminal cyan accent. (~13 h)',
   'Fósforo P1':'P1 phosphor','Verde fósforo de pantalla monocroma. (~16 h)':'Monochrome phosphor green. (~16 h)',
   'Rojo':'Red','Ámbar':'Amber','Cian':'Cyan','Fósforo':'Phosphor',' (bloqueado)':' (locked)','Desbloquéalo en la Guarida':'Unlock it in the Den',
+  'Magia':'Magic',
+  'Báculo mágico':'Magic staff','Un báculo con una gema brillante que canaliza magia antigua. (~5 h)':'A staff with a glowing gem that channels ancient magic. (~5 h)',
+  'Orbe de visión':'Orb of vision','Permite a tu dragón ver a través de las nubes y encontrar tesoros. (~5 h)':'Allows your dragon to see through clouds and find treasures. (~5 h)',
+  'Amuleto dracónico':'Draconic amulet','Un colgante místico que otorga suerte extra en cada vuelo. (~5 h)':'A mystical pendant that grants extra luck on every flight. (~5 h)',
+  'Capa de sombras':'Shadow cloak','Capa tejida con hilos de sombra, perfecta para cacerías sigilosas. (~5 h)':'Cloak woven with shadow threads, perfect for stealthy hunts. (~5 h)',
+  'Poción estelar':'Star potion','Un elixir misterioso que hace que las escamas brillen con poder. (~5 h)':'A mysterious elixir that makes scales shine with power. (~5 h)',
   /* --- registros --- */
   'Total: ':'Total: ','Hoy':'Today','Ayer':'Yesterday',
   'Aún no hay sesiones registradas.<br>Completa un enfoque y aparecerá aquí.':'No sessions logged yet.<br>Complete a focus and it will show up here.',
@@ -1184,6 +1190,11 @@ const STORE=[
   {id:'roboarm',cat:'modulos',name:'Brazo alimentador',price:520,desc:'Brazo robótico que alimenta a tu dragón. (~5,2 h)'},
   {id:'saddle',cat:'modulos',name:'Silla de montar',price:650,desc:'Silla tech para volar con tu dragón. (~6,5 h)'},
   {id:'tailfin',cat:'modulos',name:'Cola protésica',price:800,desc:'La aleta protésica roja para la cola de tu dragón. (~8 h)'},
+  {id:'baculo',cat:'magia',name:'Báculo mágico',price:500,desc:'Un báculo con una gema brillante que canaliza magia antigua. (~5 h)'},
+  {id:'orbe',cat:'magia',name:'Orbe de visión',price:500,desc:'Permite a tu dragón ver a través de las nubes y encontrar tesoros. (~5 h)'},
+  {id:'amuleto',cat:'magia',name:'Amuleto dracónico',price:500,desc:'Un colgante místico que otorga suerte extra en cada vuelo. (~5 h)'},
+  {id:'capa',cat:'magia',name:'Capa de sombras',price:500,desc:'Capa tejida con hilos de sombra, perfecta para cacerías sigilosas. (~5 h)'},
+  {id:'pocion',cat:'magia',name:'Poción estelar',price:500,desc:'Un elixir misterioso que hace que las escamas brillen con poder. (~5 h)'},
   {id:'pot_white',cat:'macetas',name:'Nido hueso',price:240,desc:'Cápsula-nido en blanco hueso. (~2,4 h)'},
   {id:'pot_sage',cat:'macetas',name:'Nido acero',price:320,desc:'Cápsula-nido en acero. (~3,2 h)'},
   {id:'accent_clay',cat:'temas',name:'Ámbar CRT',price:1000,desc:'Acento ámbar de monitor de los 90. (~10 h)'},
@@ -1208,7 +1219,7 @@ const STORE=[
   {id:'dye_purple',cat:'dragoncolor',name:'Morado',price:1600,desc:'Tu dragón en morado.',hue:280},
   {id:'dye_pink',cat:'dragoncolor',name:'Rosa',price:1600,desc:'Tu dragón en rosa.',hue:330},
 ];
-const STORE_CATS=[{id:'all',name:'Todo'},{id:'modulos',name:'Equipo'},{id:'camisetas',name:'Camisetas'},{id:'dragoncolor',name:'Color dragón'},{id:'macetas',name:'Nido'},{id:'temas',name:'Temas'}];
+const STORE_CATS=[{id:'all',name:'Todo'},{id:'modulos',name:'Equipo'},{id:'magia',name:'Magia'},{id:'camisetas',name:'Camisetas'},{id:'dragoncolor',name:'Color dragón'},{id:'macetas',name:'Nido'},{id:'temas',name:'Temas'}];
 const PLANT_STAGES=[
   {min:0,name:'Cría'},{min:30,name:'Juvenil'},{min:120,name:'Adolescente'},
   {min:360,name:'Joven'},{min:720,name:'Adulto'},{min:1500,name:'Alfa'},
