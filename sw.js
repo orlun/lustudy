@@ -1,4 +1,4 @@
-const C = 'lustudy-v26';
+const C = 'lustudy-v27';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './bg.svg'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()).catch(() => {})); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.map(k => k !== C ? caches.delete(k) : null))).then(() => self.clients.claim())); });
